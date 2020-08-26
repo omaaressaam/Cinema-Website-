@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cinema</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+h2 {
+    position: relative;
+    font-size: 30px;
+    z-index: 12;
+    overflow: hidden;
+    text-align: center;
+}
+h2:before, h2:after {
+    position: absolute;
+    top: 51%;
+    overflow: hidden;
+    width: 50%;
+    height: 2px;
+    content: '\a0';
+    background-color: blue;
+}
+h2:before {
+    margin-left: -50%;
+    text-align: right;
+}
+.color {
+    background-color: #ccc;
+}
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 25px 25px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 230px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.navbar {
+  margin-left: -25%;
+  overflow: hidden;
+  background-color: #333;
+  position: absolute;
+  bottom: 0;
+  width: 150%;
+  height: 80px;
+  float: left;
+
+}
+
+.navbar a{
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 7px 6px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.navbar p {
+
+float : right;
+padding: 7px 6px;
+color: #f2f2f2;
+}
+
+.main h1 {
+  padding: 25px;
+  margin-bottom: 500px;
+  color: #ffffff;
+}
+
+</style>
+</head>
+<body background="bg.jpg" >
+
+<div class="topnav">
+
+ <a href="signup.html">Register</a>
+ <a href="login.html">login</a>
+ <a class="active" href="home.html">Home</a>
+  <div style="padding-left:16px">
+  <h1><font color="#D0D3D4">Clip Dealer</font></h1>
+  </div>
+</div>
+
+<br><br><br>
+<h2>Top Rated</h2>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 6</div>
+  <img src="lying.and_.stealing.2019.movie_.jpg" style="width:100%" style="height:40px">
+  <div class="text">Lying and Stealing</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 6</div>
+  <img src="Godzilla-King-of-the-Monsters.jpg" style="width:100%" style="height:40px">
+  <div class="text">Godzilla : King Of The Monsters</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 6</div>
+  <img src="aladdin.jpeg" style="width:100%" style="height:40px">
+  <div class="text">Aladdin</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 6</div>
+  <img src="thelionking.jpeg" style="width:100%" style="height:40px">
+  <div class="text">The lion king</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 6</div>
+  <img src="spider-man-far-from-home-et00078437-25-06-2018-02-54-59.jpg" style="width:100%" style="height:40px">
+  <div class="text">Aladdin</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 6</div>
+  <img src="annabelle-comes.jpg" style="width:100%" style="height:40px">
+  <div class="text">Annabelle : Comes Home</div>
+</div>
+<br>
+
+<div style="text-align:center">
+
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span> 
+
+</div>
+<br><br><br><br><br><br><br><br><br>
+
+<div class="navbar">
+ 
+  <p><a href="https://www.google.com/maps/place/Faculty+of+Computer+and+Information+Sciences+-+Ain+Shams+University/@30.0785934,31.2857109,16z/data=!4m5!3m4!1s0x0:0xfa1ccd201d070672!8m2!3d30.0782592!4d31.2849384">Address :  Khalifa El-Maamon, Abbasseya,Cairo</a>.<th></p>
+  <pre class="tab">    </pre>
+  <a href="#contact">Contact us : 01125813700.</a>
+ 
+</div>
+
+
+<script>
+var slideIndex =0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none"; 
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1} 
+  slides[slideIndex-1].style.display = "block"; 
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+
+</script>
+</body>
+</html> 
